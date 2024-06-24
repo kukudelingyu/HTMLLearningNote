@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 内嵌式 优点：在同一个页面内部便于复用和维护   缺点：在多个页面之间可重用性不高 -->
+    <style type="text/css">
+        h3{
+            color:aqua;
+        }
+    </style>
+
+    <!-- 外链式 将CSS代码写在一个单独的.css文件中，在<head>标签中使用<link>标签直接引入该文件到页面中 -->
+    <!-- 优点：是的CSS样式与HTML页面分离，便于整个页面系统的规划和维护，可重用性高    缺点：CSS代码由于分离到单独的CSS文件，容易出现CSS代码过于集中，若维护不当则极易造成混乱 -->
+    <link rel="stylesheet" type="text/css" href="./css/main.css">    
+</head>
+<body>
+    <!-- 行内式 优点：方便 直观 缺点：缺乏可重用性-->
+    <div style="width: 100px; height: 200px; background: red;"></div>
+    <!-- 内嵌式 -->
+    <h3>duanlingyu</h3>    
+    <!-- 外链式 -->
+    <h2>duanlingyu</h2>
+</body>
+</html>
