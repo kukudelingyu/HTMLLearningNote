@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 标签选择器 -->
+    <style type="text/css>">
+        p {
+            color: red;
+        }
+    </style>
+    <!-- 类选择器 根据类名来选择标签-->
+    <style type="text/css">
+        .blue{
+            color: blue;
+        }
+        .red {
+            color: red;
+        }
+        .green {
+            color: green
+        }
+    </style>
+
+    <!-- 层级选择器 -->
+    <style type="text/css">
+        div p {
+            color: aqua;
+        }
+    </style>
+
+    <!-- id选择器 -->
+    <style type="text/css">
+        #box {
+            color: red;
+        }
+
+    </style>
+
+    <!-- 组选择器 -->
+    <style type="text/css">
+        .box1,.box2,.box3 {
+            width: 100px;
+            height: 200px;
+        }
+        .box1 {
+            background: red;
+        }
+        .box2 {
+            background: blue;
+        }
+        .box3 {
+            background: green;
+        }
+    </style>
+
+    <!-- 伪类选择器 -->
+    <style type="text/css">
+        .box4 {
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+        .box4:hover {
+            width: 200px;
+            height: 200px;
+            background: blue;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <!-- 标签选择器 -->
+    <p>duanlingyu</p>
+
+    <!-- 类选择器 -->
+    <div class="blue">这是一个div</div>
+
+    <!-- 层级选择器 -->
+    <div>
+        <p>这是一个p标签</p>
+    </div>
+
+    <!-- id选择器 -->
+    <div id="box">id选择器</div>
+
+    <!-- 组选择器 -->
+    <div class="box1">box1</div>
+    <div class="box2">box1</div>
+    <div class="box3">box1</div>
+
+    <!-- 伪类选择器 -->
+    <div class="box4">伪类选择器</div>
+</body>
+</html>
