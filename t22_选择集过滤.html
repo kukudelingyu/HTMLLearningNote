@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jQuery导入 -->
+    <script
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+            // 获取所有div标签
+            var $mDiv = $("div")
+            $mDiv.css({"height":"100px"}) 
+            // 过滤出含有id为张三的标签
+            $mDiv.has("#zhangsan").css({"background":"red"})
+            // 过滤出index为1的标签
+            $mDiv.eq(1).css({"background":"blue"})
+        })
+
+    </script>
+</head>
+<body>
+    <div>
+        <input type="button" value="张三" id="zhangsan"/>
+    </div>
+
+    <div>
+        <input type="button" value="李四" class="lisi"/>
+    </div>
+</body>
+</html>
