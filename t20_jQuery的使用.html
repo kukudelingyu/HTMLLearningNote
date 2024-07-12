@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- jQuery导入 -->
+    <script
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous">
+    </script>
+
+    <!-- 原生写法 -->
+    <script>
+        // window.onload = function() {
+        //     var mDiv = document.getElementById("duanlingyu")
+        //     alert(mDiv)
+        // }
+    </script>
+    <!-- jQuery获取标签的方式 -->
+    <script>
+        // $(document).ready(function() {
+        //     // jQuery中获取标签的方式和css中是一样的
+        //     var $mDiv = $("#duanlingyu")
+        //     alert($mDiv)
+        // })
+    </script>
+    <!-- 简化写法 -->
+    <script>
+        $(function() {
+            var $mDiv = $("#duanlingyu")
+            alert($mDiv)
+        })
+    </script>
+</head>
+<body>
+    <div id="duanlingyu"></div>
+</body>
+</html>
